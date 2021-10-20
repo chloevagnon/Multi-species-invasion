@@ -10,4 +10,4 @@ The script **BINV-D-21-00258_Rcodes.R** is devided into three parts: (i) Inferre
   - **Example_SpInventory.Rdata**: simplified data to apply quickly the functions from the aNM
   - **DATA_Bourget.csv**: data correponding to the species inventory used in the article
     
-For any supplementary questions, contact us to chloe.vagnon@gmail.com
+For any supplementary questions, contact us: chloe.vagnon@gmail.com
