@@ -6,7 +6,7 @@
 #
 # Input:
 # species_name = the name of the species to use
-# body_size = log10(vector of consumer body sizes in µm)
+# body_size = log10(vector of consumer body sizes in Âµm)
 # species_category = "vertebrate" or "vertebre" or "invertebrate" or "invertebre" or other
 #    /!\ If "other" is mentionned, the species will automatically be considered as producer and not as consumer
 #
@@ -175,6 +175,11 @@ Ref_L_Diet = function(Bmat, diet,Table,LinksTab) {
             Bmat[j,i]<-0
           }else{Bmat[j,i]<-Bmat[j,i]}
           
+          # if(diet[i]=="inv" & 
+          #    diet[j]!="prod"){
+          #   Bmat[j,i]<-0
+          # }else{Bmat[j,i]<-Bmat[j,i]}
+          
         }else{Bmat[,i]<-0}
       }
     }    
@@ -278,10 +283,10 @@ Ref_L_Hab = function(Bmat, habitat, Table,LinksTab) {
 # Inputs: 
 # Niche_attributes = data frame resulting from the function "get_niche_attribute" with: 
 #     names = species name also used as colnames/rownames for the binary matrix
-#     n = log10(species body size (µm))
-#     c = optimal center of the niche (log10(µm))
-#     low = lower bound of the niche range (log10(µm))
-#     high =higher bound of the niche range (log10(µm))
+#     n = log10(species body size (Âµm))
+#     c = optimal center of the niche (log10(Âµm))
+#     low = lower bound of the niche range (log10(Âµm))
+#     high =higher bound of the niche range (log10(Âµm))
 
 # Bmat = initial binary interaction matrix
 
